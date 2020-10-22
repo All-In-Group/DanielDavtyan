@@ -1,3 +1,4 @@
+#AniPetrosyan-կոդնա կիրառած իմ բոտի վրա,ինչը հասկանում եմ փուշ եմ անում ստեղ
 import telebot
 
 bot = telebot.TeleBot('1175459373:AAHTRHloBxpjk-IXvYcXgv1414CALet67CA')
