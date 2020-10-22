@@ -1,11 +1,14 @@
 #AniPetrosyan-կոդնա կիրառած իմ բոտի վրա,ինչը հասկանում եմ փուշ եմ անում ստեղ
 import telebot
 from telebot import types
-bot = telebot.TeleBot('1175459373:AAHTRHloBxpjk-IXvYcXgv1414CALet67CA')
+
+
+bot = telebot.TeleBot('0')
 
 name = ''
 lastName = ''
 age = 0
+
 
 
 
@@ -42,9 +45,10 @@ def get_age(message):
     global age
     while age == 0:
         try:
-             age = int(message.text)
+            age = int(message.text)
         except Exception:
-             bot.send_message(message.from_user.id, 'Write with numbers please')
+            bot.send_message(message.from_user.id, 'Write with numbers please')#infinity loop if user input isn't number
+
     keyboard = types.InlineKeyboardMarkup()
     key_back = types.InlineKeyboardButton(text='Back', callback_data='Back');
     keyboard.add(key_back)
