@@ -1,13 +1,17 @@
 #Write a code to extract each digit from
 # an integer, in the reverse order
 
-num = 7536
+num = 156481
+str1 = " "
+def split(word):
+    return [char for char in word]
 
-while num > 0:
-    originalNum = num
-    one = num % 10
-    reverseNum = (10 * reverseNum)
-    num = num // 10
+b = split(str(num))
 
+b.reverse()
+for x in b:
+    str1 += x + " "
+
+print(str1)
 
 
