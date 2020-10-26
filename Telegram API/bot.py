@@ -2,7 +2,7 @@ import telebot
 from telebot.types import Message
 from telebot import types
 
-TOKEN = '1175459373:AAHTRHloBxpjk-IXvYcXgv1414CALet67CA'
+TOKEN = ' '
 
 bot = telebot.TeleBot(TOKEN)
 
@@ -65,6 +65,4 @@ def support(message: Message):
 
 
 
-
-
-        bot.polling()
+bot.polling()
